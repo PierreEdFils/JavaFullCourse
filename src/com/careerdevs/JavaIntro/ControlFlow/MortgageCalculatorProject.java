@@ -44,6 +44,11 @@ public class MortgageCalculatorProject {
                 /Math.pow(1 + monthlyInterest,numberOfPayments) -1;
         String mortgageFormated = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println("Mortgage");
+        double rampage = principal
+                *(monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                /Math.pow(1 + monthlyInterest,numberOfPayments) -1;
+        String mortgageFormated = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage");
 
 
     }
