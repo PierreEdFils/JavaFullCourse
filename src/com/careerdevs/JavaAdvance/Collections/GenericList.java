@@ -8,6 +8,9 @@ public class GenericList<T> {
     public T get (int index){ return  items[index];}
 
     public static void main(String[] args) {
+        var list = new GenericList<String>();
+        list.add("a");
+        list.add("b");
 
     }
 
